@@ -12,6 +12,14 @@
 <!--必要样式-->
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 
+<!--[if lt IE9]>
+<script>
+	window.onload = function () {
+		document.getElementById('large-header').style.display = 'none';
+		document.getElementById('supported-message').style.display = 'block';
+	};
+</script>
+<![endif]-->
 <!--[if IE]>
 <script src="js/html5.js"></script>
 <![endif]-->
@@ -41,6 +49,10 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="supported-message" id="supported-message">
+					Your browser is not supported!
+					<br>请使用<a href="http://baike.baidu.com/view/4974221.htm"> 现代浏览器 </a>！
 				</div>
 			</div>
 		</div><!-- /container -->
